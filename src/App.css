@@ -161,3 +161,57 @@ button:disabled {
   margin-left: 250px; /* to account for sidebar width */
   width: calc(100% - 220px);
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .app-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .sidebar-title {
+    display: none; /* Hide the big title on small screens */
+  }
+
+  .sidebar-nav a {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .main-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .topbar {
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .content-area {
+    padding: 15px;
+  }
+
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .fib input {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
